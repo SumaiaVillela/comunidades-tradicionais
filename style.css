@@ -1,7 +1,7 @@
 /* INPUT */
 
 select#comunidadeDropdown{
-    background-color: rgb(248, 248, 248);
+    background-color: #f8f8f8;
     padding: 6px 6px;
     /* border-radius: 20px; */
     border: 1.7px solid black;
@@ -9,6 +9,7 @@ select#comunidadeDropdown{
     font-weight: 600;
     color:rgb(0, 0, 0);
     text-align: center;
+    margin-top: 40px;
 }
 
 select{
@@ -20,4 +21,34 @@ select{
 /* RETIRADA DO SÍMBOLO DA CANVASJS */
 a[class="canvasjs-chart-credit"] {
     display: none !important;
+}
+
+
+body{
+    padding: 0px 20px;    
+}
+
+#chartContainer {
+    margin: 0 auto;
+    width: 90%; /* ou qualquer largura desejada */
+}
+
+
+h1{
+    font-family: "Oswald", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding-top: 20px;
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+h3{
+    font-family: "Oswald", sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    width: 90%;
+    margin: 0 auto;
+
 }

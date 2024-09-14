@@ -33,18 +33,18 @@ window.onload = function () {
                 function atualizarGrafico(comunidadeSelecionada) {
                     // CATEOGIRAS NUTRICIONAIS
                     const categorias = [
+                        'Muito baixo peso para a idade %',
                         'Baixo peso para a idade %', 
-                        'Muito baixo peso para a idade %', 
                         'Peso adequado para idade %', 
                         'Peso elevado para a idade %'
                     ];
 
                     // PALHETA DE CORES
                     const cores = [
-                        "#D3D6CE",  // Cor para 'Baixo peso para a idade %'
-                        "#B0CC8F",  // Cor para 'Muito baixo peso para a idade %'
-                        "#92B865",  // Cor para 'Peso adequado para idade %'
-                        "#6A8C40"   // Cor para 'Peso elevado para a idade %'
+                        "#FF6347",  // Cor para 'Muito baixo peso para a idade %'
+                        "#EEE8AA",  // Cor para 'Baixo peso para a idade %'
+                        "#b1bfae",  // Cor para 'Peso adequado para idade %'
+                        "#BA55D3"   // Cor para 'Peso elevado para a idade %'
                     ];
 
                     let chartData = [];
@@ -85,8 +85,14 @@ window.onload = function () {
                         theme: "light2",
                         title: {
                             text: `Situação Nutricional da Comunidade: ${comunidadeSelecionada}`,
-                            fontFamily:'Courier New',
-                            fontSize:14,
+                            fontFamily: 'Courier New',
+                            fontSize: 14,
+                            padding: {
+                                top: 10,
+                                bottom: 20,
+                                left: 10,
+                                right: 10,
+                            }
                         },
                         axisY: {
                             interval: 10,
